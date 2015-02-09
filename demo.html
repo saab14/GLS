@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'/>
+    <title>GLS Demo</title>
+    <link rel='stylesheet' type='text/css' href='css/gls.css'/>
+</head>
+<body>
+
+    <script >
+        $( document ).ready(function() {
+            // Initiate the slideshow
+            $('#slideshow').slideshow({
+                'height': 300,
+                'fadeTime': 500,
+                'intervalTime': 5000,
+                'disc': true
+            });
+
+            // Initiate the Gallery
+            $('#gallery').gallery({
+                'imgCounter': true,
+                'width': 165,
+                'height': 95
+            });
+        });
+    </script>
+    
+    <h2 id="gallery_example">Gallery</h2>
+    <p>
+        Click on any image to enlarge it and navigate through the gallery images by pressing the left or the right arrow
+    </p>
+    <div class='mainGallery'>
+        <ul id="gallery">
+            <li><img src="img/london_1b.jpg" title="London 1b"></li>
+            <li><img src="img/london_2b.jpg" title="london 2b"></li>
+            <li><img src="img/london_3b.jpg" title="london 3b"></li>
+            <li><img src="img/london_4b.jpg" title="london 4b"></li>
+        </ul>
+    </div>
+    
+    <hr />
+    
+    <h2 id="lightbox_example">Lightbox</h2>
+    <p>
+        Click on an image to open the Lightbox. Click anywhere or press ESC to close it.
+    </p>
+    <div class="mainLightbox">
+        <img src='img/london_1b.jpg' class="lightbox" width="30%" height="159" title="london 1b">
+        <img src='img/london_2b.jpg' class="lightbox" width="30%" height="159" title="london 2b">
+        <img src='img/london_3b.jpg' class="lightbox" width="30%" height="159" title="london 3b">
+    </div>
+
+    <hr>
+
+    <h2 id="slideshow_example">Slideshow</h2>
+    <p>
+        Click on the bullet points under the slideshow to change the image or wait for the slideshow to show you all images.
+    </p>
+    <div class="mainSlideshow">
+        <ul id="slideshow">
+            <li><img src="img/london_1a.jpg"></li>
+            <li><img src="img/london_2a.jpg"></li>
+            <li><img src="img/london_3a.jpg"></li>
+            <li><img src="img/london_4a.jpg"></li>
+        </ul>
+    </div>
+</body>
+</html>
